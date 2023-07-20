@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import SearchBar from './components/SearchBar';
-import { useState } from 'react';
+
 import PokemonList from './components/PokemonList';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
   //const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
-     <h1>Pokémon Search</h1>
+     <h1>Pokémon Finder</h1>
       <PokemonList />
     </div>
   );

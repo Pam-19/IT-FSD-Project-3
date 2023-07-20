@@ -1,65 +1,106 @@
 /* PokemonList.css */
 
+body {
+    background-color: #fcd116;
+  }
 
-/* PokemonList.css */
-
-.pokemon-list-wrapper {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.001rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    width: 250px; /* Adjust the width as needed */
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+    border-radius: 50%; /* Rounded border to make it circular */
+    background-color: #fcd116; /* Match the card background color */
+    padding: 2px; /* Add some padding to separate the border from the image */
+  }
+  .pokemon-list-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align the content horizontally */
+    align-items: center;
     gap: 1rem;
+  }
+  
+  #search {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 2px solid #fbbd08;
+    border-radius: 5px;
+    margin-bottom: 1rem;
   }
   
   .pokemon-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    max-width: 800px;
+    gap: 1rem;
+    max-width: 1100px;
     margin-top: 1rem;
-    justify-content: center;
+    justify-content: space-evenly; /* Change justify-content to space-evenly */
   }
   
-  /* Add styles for the pagination wrapper */
+  .pokemon-card {
+    background-color: #fde460;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 12rem; /* Adjust the width to fit 5 cards per row with 1rem gap */
+    /* flex-basis: 1rem%; Add flex-basis to ensure cards maintain their width */
+    text-align: center;
+    transition: transform 0.2s ease;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(200deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    position: relative;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.15);
+  }
+  
+  .pokemon-card img {
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto 1rem;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.2);
+    position: relative;
+  }
+  .pokemon-card img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Darker color for the overlay */
+    border-radius: 5px;
+  }
+  
+  .pokemon-card #name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3a3d14;
+  }
+  
+  .pokemon-card p {
+    
+    color: #423e18;
+    margin: 0.5rem 0;
+  }
+  
   .pagination-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-  }
-  
-  
-  .pokemon-card {
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 23%; /* Adjust the width to fit 4 cards per row */
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .pokemon-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .pokemon-card img {
-    width: 80%;
-    height: auto;
-    margin: 0 auto 1rem;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .pokemon-card #name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .pokemon-card p {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 0.5rem 0;
   }
   
   #pagination {
@@ -72,12 +113,12 @@
     margin: 0 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: #fff;
     cursor: pointer;
   }
   
   #pagination button:hover {
-    background-color: #45a049;
+    background-color: #f97502;
   }
   

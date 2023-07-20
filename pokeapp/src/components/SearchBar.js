@@ -11,11 +11,11 @@ import React from 'react'
     
 
     <div>
-        <div>Pokemon Search Bar </div>
+        <div> </div>
       <input
       type="text"
       id="search"
-      placeholder="        Search Here !!!"
+      placeholder="Search Here !!!"
       onChange={handleChange}
     />
     </div>
