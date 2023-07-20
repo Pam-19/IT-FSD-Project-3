@@ -1,0 +1,83 @@
+/* PokemonList.css */
+
+
+/* PokemonList.css */
+
+.pokemon-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the content horizontally */
+    gap: 1rem;
+  }
+  
+  .pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 800px;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  /* Add styles for the pagination wrapper */
+  .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  
+  .pokemon-card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 23%; /* Adjust the width to fit 4 cards per row */
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pokemon-card img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pokemon-card #name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pokemon-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.5rem 0;
+  }
+  
+  #pagination {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  #pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #pagination button:hover {
+    background-color: #45a049;
+  }
+  
